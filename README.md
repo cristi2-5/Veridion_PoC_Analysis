@@ -1,3 +1,14 @@
+## Setup
+```bash
+   git clone https://github.com/cristi2-5/Veridion_PoC_Analysis.git
+   python -m venv .venv
+   # Windows:
+   .\.venv\Scripts\activate
+   # Mac/Linux:
+   source .venv/bin/activate
+   pip install -r requirements.txt
+```
+
 # Veridion_PoC_Analysys
 
 ## Cum mi-am gandit alegerile(partea de selectie a celei mai bune variante din cele 5)
