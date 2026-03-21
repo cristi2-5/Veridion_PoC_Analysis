@@ -6,6 +6,7 @@
    .\.venv\Scripts\activate
    # Mac/Linux:
    source .venv/bin/activate
+   cd .\Veridion_PoC_Analysis\
    pip install -r requirements.txt
 ```
 
