@@ -32,3 +32,9 @@
 * *Desi in ziua de astazi este mult mai simplu sa luam legatura cu cineva,am ales sa ma uit si peste datele lipsa din zona de contacte. In urma analizei,am descoperit ca 31 dintre firme nu au nicio data de contact (as fi incercat aici API-ul insa nu merge sa imi fac cont)*
 * *Am observat ca in 41% din cazuri nu a fost gasita cifra de afaceri, ceea ce poate fi un factor negativ, ma gandesc ca nu se doreste un parteneriat cu o firma in prag de faliment sau care nu isi poate sustine angajatii(la fel si aici)*
 * *Am identificat 23 de companii pentru care venitul mediu per angajat anual este mai mic decat 8000$*
+
+
+## Mici Insight-uri
+* *M-am gandit ca ar fi o idee buna sa arat grafic si datele principale pe care le-am generat*
+* *Astfel am generat grafice pentru: scorul pentru matching,top 10 industrii,top 5 tari si orase predominante, revenue vs employees pentru primele 12 sectoare*
+* *main_business_category,main_industry,
