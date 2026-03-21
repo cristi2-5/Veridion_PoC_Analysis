@@ -31,10 +31,11 @@
 * *Am observat inconsistente la nivelul orasului -- cel de input difera de cel de output - din ce am inteles asta se intampla deoarece in orasul de output se afla sediul central al firmei respective(am gasit ca in 38% din cazuri este mismatch) - nu stiu sincer daca ar trebui modificate,din moment ce acolo e sediul central cred ca mai bine trebuie pastrat asa.*
 * *Desi in ziua de astazi este mult mai simplu sa luam legatura cu cineva,am ales sa ma uit si peste datele lipsa din zona de contacte. In urma analizei,am descoperit ca 31 dintre firme nu au nicio data de contact (as fi incercat aici API-ul insa nu merge sa imi fac cont)*
 * *Am observat ca in 41% din cazuri nu a fost gasita cifra de afaceri, ceea ce poate fi un factor negativ, ma gandesc ca nu se doreste un parteneriat cu o firma in prag de faliment sau care nu isi poate sustine angajatii(la fel si aici)*
-* *Am identificat 23 de companii pentru care venitul mediu per angajat anual este mai mic decat 8000$*
+* *Am identificat 23 de companii pentru care venitul mediu per angajat anual este mai mic decat 8000$,care de asemnea le voi baga in fisierul rejected_data*
 
 
 ## Mici Insight-uri
 * *M-am gandit ca ar fi o idee buna sa arat grafic si datele principale pe care le-am generat*
 * *Astfel am generat grafice pentru: scorul pentru matching,top 10 industrii,top 5 tari si orase predominante, revenue vs employees pentru primele 12 sectoare*
-* *main_business_category,main_industry,
+* *Voi analiza datele cu un scor mic din rejected_data pentru a observa ce a condus la un scor atat de mic. Scorul mic este datorat faptului ca desi sunt suficiente date de input si exista companii cu nume asemanatoare, output-urile nu contin tara de input(o posibila solutie ar fi sa se caute separat pentru fiecare companie si sa se verifice daca exista o companie in tara de input sau sa se verifice daca nu cumva sediul central coincide cu tara de output -- in acest caz algoritmul meu se inseala). O alta cauza poate fi lipsa datelor de output, care din nou trage in jos scorul. Cea mai completa solutie ar include adaugarea a noi date de input precum input_main_sector,input_main_industry,input_business_tags,date care spori acuratetea modelului care face scrapping de pe web.*
+* *Am mai analizat si missing_output_rates. Pentru 13% din date lipsesc mai mult de 50% din campurile de output. Pentru 7,5% din date lipsesc mai muly de 60% din date. Aceste lipsuri pot conduce la o analiza ineficienta a datelor.*
